@@ -1,0 +1,49 @@
+@font-face {
+  font-family: 'ticking-timebomb';
+  src: url('../fonts/ticking-timebomb-regular.woff2') format('woff2'),
+       url('../fonts/ticking-timebomb-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  text-align: center;
+}
+
+.game-container {
+  position: relative;
+  display: inline-block;
+  padding: 1px; 
+  font-size: 0;
+  border: 1px solid #111;
+}
+
+.score {
+  position: absolute;
+  font-family: 'ticking-timebomb', sans-serif;
+  font-size: 19px;
+}
+
+.current-score:before {
+  content: 'score';
+  display: block;
+  font: italic bold 0.8em 'Arial', sans-serif;
+  text-transform: uppercase;
+}
+
+.current-score {
+  top: 10px;
+  right: -80px;
+}
+
+.hi-score:before {
+  content: 'hi-score';
+  display: block;
+  font: italic bold 0.8em 'Arial', sans-serif;
+  text-transform: uppercase;
+}
+
+.hi-score {
+  top: 50px;
+  right: -90px;
+}
